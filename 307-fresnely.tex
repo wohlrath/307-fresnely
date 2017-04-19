@@ -19,7 +19,7 @@
 \usepackage{url}
 
 \usepackage{siunitx}
-\sisetup{locale = DE}  %, separate-uncertainty = true    kdybych chtel +/-
+\sisetup{locale = DE, separate-uncertainty = true    } %kdybych chtel +/-
 
 \usepackage{float}
 \newfloat{graph}{htbp}{grp}
@@ -36,22 +36,25 @@
 
 \bibliography{source}
 
+
 \begin{document}
 
 \begin{titlepage}
-\includepdf[pages={1}]{./graficos/307-tit.pdf}
+\includepdf[pages={1}]{./graficos/tit.pdf}
 \end{titlepage}
 
 \section*{Pracovní úkoly}
 \begin{enumerate}
-\item ÚKOLY
+\item Najděte směr snadného průchodu polarizátoru užívaného v aparatuře.
+\item Ověřte, že zdroj světla je polarizován kolmo k vodorovné rovině.
+\item Na přiložených vzorcích proměřte závislost intenzity odraženého světla na úhlu dopadu pro \emph{TE} i \emph{TM} polarizaci.
+\item Naměřené výsledky porovnejte s teoretickým průběhem závislostí.
+\item Určete indexy lomů měřených vzorků a jejich relativní chybu.
+
 \end{enumerate}
 
 %Teoretická část
 \input{teorie.tex}
-
-%Podmínky a měřící přístroje
-\input{podminky.tex}
 
 %Výsledky měření
 \input{vysledky.tex}
